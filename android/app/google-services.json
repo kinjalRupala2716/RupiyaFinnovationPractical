@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "856140989408",
+    "project_id": "rupiya-finnovation-practical",
+    "storage_bucket": "rupiya-finnovation-practical.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856140989408:android:f6ab7768e5008058dd2185",
+        "android_client_info": {
+          "package_name": "com.example.rupiya_finnovations_practical_test_kinjalrathod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSVlDq27CjL-qDIXcBmgcKhaiho-zDt6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
