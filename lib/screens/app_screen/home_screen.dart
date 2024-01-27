@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/camera_preview_widget.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/camera_provider.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/seats_model.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/model/seats_model.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/widget/camera_preview_widget.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/provider/camera_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -173,12 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  int _calculateItemCount() {
-    // Return the minimum length of the two lists
-    return seatsModel.length < cameraProvider!.capturedImages.length
-        ? seatsModel.length
-        : cameraProvider!.capturedImages.length;
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -228,7 +223,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   );
                 } else {
-                  return Center(child: Text('No more pairs.'));
+                  return const Center(child: Text('No more pairs.'));
                 }
               });
         },

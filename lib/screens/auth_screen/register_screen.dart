@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:developer';
 
 import 'package:camera/camera.dart';
@@ -5,7 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/home_screen.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/app_screen/home_screen.dart';
 import 'package:rupiya_finnovations_practical_test_kinjalrathod/utils/my_sharepreferences.dart';
 // import 'package:encrypt/encrypt.dart' as encrypt;
 
@@ -21,7 +23,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  bool _showContactSection = false;
+  bool showContactSection = false;
   String errorMessage = '';
   final TextEditingController _controllerName = TextEditingController();
   final TextEditingController _controllerEmail = TextEditingController();
@@ -173,7 +175,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    if (!_showContactSection)
+                    if (!showContactSection)
                       Column(
                         children: [
                           const SizedBox(height: 300),

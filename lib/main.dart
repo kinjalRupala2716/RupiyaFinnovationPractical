@@ -2,8 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rupiya_finnovations_practical_test_kinjalrathod/firebase_options.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/camera_provider.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/login_screen.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/provider/camera_provider.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/auth_screen/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

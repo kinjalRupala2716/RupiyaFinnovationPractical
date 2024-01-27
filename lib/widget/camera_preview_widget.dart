@@ -1,7 +1,9 @@
+// ignore_for_file: unnecessary_null_comparison
+
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:rupiya_finnovations_practical_test_kinjalrathod/screens/camera_provider.dart';
+import 'package:rupiya_finnovations_practical_test_kinjalrathod/provider/camera_provider.dart';
 
 class CameraPreviewWidget extends StatefulWidget {
   const CameraPreviewWidget({
